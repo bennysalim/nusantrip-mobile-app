@@ -1,15 +1,16 @@
 package com.benny.nusantrip
 
+import android.app.ActivityOptions
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 
-class MainActivity : AppCompatActivity() {
+class Activity1_SplashScreen : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_activity1_splashscreen)
         //1. HIDE THE ACTION BAR
         supportActionBar?.hide()
         //2. CREATE SPLASH SCREEN TIME, AND MOVE THE ACTIVITY PAGE USING INTENT

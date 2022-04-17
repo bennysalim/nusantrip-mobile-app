@@ -12,95 +12,105 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:maxHeight="400dp"
+        android:maxHeight="500dp"
+        android:adjustViewBounds="true"
         android:src="@drawable/gambarindo"
         android:scaleType="center"
-        android:layout_height="400dp"
         android:focusableInTouchMode="true"
-        android:id="@+id/gambarviewpager"/>
-    <TextView
-        android:id="@+id/maintitle"
+        android:id="@+id/gambarviewpager"
+        android:layout_height="370dp" />
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:paddingTop="40dp"
+        android:paddingBottom="40dp"
         app:layout_constraintTop_toBottomOf="@id/gambarviewpager"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="40dp"
-        android:textSize="28sp"
-        android:textAlignment="center"
-        android:text="Beli tiket anti mahal\ndi Nusantrip"
-        android:textColor="@color/nusantrip"
-        android:fontFamily="@font/montserratbold"
-        />
-    <TextView
-        android:id="@+id/subtitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/maintitle"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:padding="26dp"
-        android:textSize="16sp"
-        android:textAlignment="center"
-        android:text="Beli tiket anti mahal di Nusantrip Beli tiket anti mahal di Nusantrip Beli tiket anti mahal di Nusantrip Beli tiket anti mahal di nusantrip beli ike"
-        android:textColor="@color/nusantrip"
-        android:fontFamily="@font/montserratlight"
-        />
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:gravity="center_horizontal"
-        android:orientation="horizontal"
-        app:layout_constraintTop_toBottomOf="@id/subtitle"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:id="@+id/viewpager">
-        <com.tbuonomo.viewpagerdotsindicator.SpringDotsIndicator
+        app:layout_constraintEnd_toEndOf="parent">
+        <TextView
+            android:id="@+id/maintitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/gambarviewpager"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textSize="25sp"
             android:textAlignment="center"
-            app:dotsSize="13dp"
-            android:foregroundGravity="center"
-            android:layout_centerHorizontal="true"
-            app:dotsColor="@color/nusantrip"/>
-    </RelativeLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginLeft="26dp"
-        android:gravity="center"
-        android:layout_marginRight="26dp"
-        android:layout_marginTop="20dp"
-        app:layout_constraintTop_toBottomOf="@id/viewpager">
-        <Button
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:layout_marginLeft="10dp"
-            android:backgroundTint="@color/nusantrip"
-            android:layout_marginRight="10dp"
-            android:padding="13dp"
-            android:fontFamily="@font/montserratbold"
-            android:textAllCaps="false"
-            android:text="Registrasi"
-            android:textSize="17sp"/>
-        <Button
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="Login"
-            android:backgroundTint="@color/white"
+            android:text="Beli tiket anti mahal\ndi Nusantrip"
             android:textColor="@color/nusantrip"
-            android:backgroundTintMode="screen"
             android:fontFamily="@font/montserratbold"
-            android:textAllCaps="false"
-            android:padding="13dp"
-            android:textSize="17sp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"/>
+            />
+        <TextView
+            android:id="@+id/subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/maintitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:padding="26dp"
+            android:textSize="16sp"
+            android:textAlignment="center"
+            android:text="Beli tiket anti mahal di Nusantrip Beli tiket anti mahal di Nusantrip Beli tiket anti mahal di Nusantrip Beli tiket anti mahal di nusantrip beli ike"
+            android:textColor="@color/nusantrip"
+            android:fontFamily="@font/montserratlight"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/subtitle"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/viewpager">
+            <com.tbuonomo.viewpagerdotsindicator.SpringDotsIndicator
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                app:dotsSize="13dp"
+                android:foregroundGravity="center"
+                android:layout_centerHorizontal="true"
+                app:dotsColor="@color/nusantrip"/>
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="26dp"
+            android:gravity="center"
+            android:layout_marginRight="26dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@id/viewpager">
+            <Button
+                android:id="@+id/btnSignUpDariOnboarding"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/nusantrip"
+                android:fontFamily="@font/montserratbold"
+                android:textAllCaps="false"
+                android:text="Registrasi"
+                android:textSize="15sp"/>
+            <Button
+                android:id="@+id/btnSignInDariOnboarding"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Login"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/nusantrip"
+                android:backgroundTintMode="screen"
+                android:fontFamily="@font/montserratbold"
+                android:textAllCaps="false"
+                android:textSize="15sp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
 
+        </LinearLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
