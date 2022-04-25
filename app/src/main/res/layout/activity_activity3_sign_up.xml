@@ -81,6 +81,7 @@
             android:fontFamily="@font/montserratbold"
             android:textAllCaps="false"
             android:padding="12dp"
+            android:id="@+id/registrasi"
             android:text="Registrasi"
             android:textSize="15sp"/>
         <TextView

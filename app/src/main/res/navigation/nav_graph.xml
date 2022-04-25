@@ -1,6 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/nav_graph">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragment1_Home">
 
+    <fragment
+        android:id="@+id/fragment1_Home"
+        android:name="com.benny.nusantrip.Fragment1_Home"
+        android:label="fragment_fragment1__home"
+        tools:layout="@layout/fragment_fragment1__home" />
+    <fragment
+        android:id="@+id/fragment2_MyActivity"
+        android:name="com.benny.nusantrip.Fragment2_MyActivity"
+        android:label="fragment_fragment2__my_activity"
+        tools:layout="@layout/fragment_fragment2__my_activity" />
+    <fragment
+        android:id="@+id/fragment3_SavedPost"
+        android:name="com.benny.nusantrip.Fragment3_SavedPost"
+        android:label="fragment_fragment3__saved_post"
+        tools:layout="@layout/fragment_fragment3__saved_post" />
+    <fragment
+        android:id="@+id/fragment4_Notification"
+        android:name="com.benny.nusantrip.Fragment4_Notification"
+        android:label="fragment_fragment4__notification"
+        tools:layout="@layout/fragment_fragment4__notification" />
+    <fragment
+        android:id="@+id/fragment5_Profile"
+        android:name="com.benny.nusantrip.Fragment5_Profile"
+        android:label="fragment_fragment5__profile"
+        tools:layout="@layout/fragment_fragment5__profile" />
 </navigation>
