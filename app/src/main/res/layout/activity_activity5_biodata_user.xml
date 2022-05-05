@@ -5,5 +5,144 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Activity5_BiodataUser">
+    <ImageButton
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="172dp"
+        android:src="@drawable/gambarindo"
+        android:scaleType="centerCrop"
+        android:background="@color/white"
+        android:adjustViewBounds="true"
+        android:id="@+id/coverphoto"
+        android:elevation="2dp"/>
 
+    <ImageButton
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:translationZ="90dp"
+        android:id="@+id/profilephoto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/coverphoto"
+        android:background="@drawable/circlebg"
+        android:src="@drawable/benny"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@id/coverphoto"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/coverphoto"
+        app:layout_constraintTop_toTopOf="@id/coverphoto"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="boleh kenalan gak\nkamu siapa?"
+            app:layout_constraintStart_toStartOf="parent"
+            android:paddingTop="25dp"
+            android:paddingBottom="25dp"
+            android:textSize="20dp"
+            android:textColor="@color/nusantrip"
+            android:fontFamily="@font/montserratbold"
+            app:layout_constraintTop_toBottomOf="@id/logo"
+            app:layout_constraintTop_toTopOf="parent"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="First Name"
+            android:paddingBottom="20dp"
+            android:inputType="textPersonName"
+            android:textSize="17dp"
+            android:fontFamily="@font/montserratreguler" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="17dp"
+            android:hint="Last Name"
+            android:paddingBottom="20dp"
+            android:fontFamily="@font/montserratreguler"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="City"
+            android:paddingBottom="20dp"
+            android:inputType="textPersonName"
+            android:textSize="17dp"
+            android:fontFamily="@font/montserratreguler" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="17dp"
+            android:hint="Alamat"
+            android:paddingBottom="20dp"
+            android:fontFamily="@font/montserratreguler"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_calendar_month_24"
+                android:padding="10dp"
+                android:background="@color/nusantrip"
+                android:layout_marginRight="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="17dp"
+                android:hint="Tanggal Lahir"
+                android:padding="10dp"
+                android:fontFamily="@font/montserratbold"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="40dp">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnMulaiPerjalanan"
+            android:layout_weight="1"
+            android:backgroundTint="@color/nusantrip"
+            android:fontFamily="@font/montserratbold"
+            android:textAllCaps="false"
+            android:padding="12dp"
+            android:text="Mulai Perjalanan"
+            android:textSize="15sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/montserratbold"
+            android:textAllCaps="false"
+            android:padding="12dp"
+            android:text="Eh saya mau ganti akun dulu dong"
+            android:textColor="@color/nusantrip"
+            android:textSize="15sp"/>
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

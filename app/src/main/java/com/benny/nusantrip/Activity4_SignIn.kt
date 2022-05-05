@@ -14,6 +14,8 @@ class Activity4_SignIn : AppCompatActivity() {
             actionBar.setHomeAsUpIndicator(R.drawable.arrowleft)
             actionBar.setDisplayHomeAsUpEnabled(true)
         }
+        //actionbar customization : hide text
+        actionBar?.setDisplayShowTitleEnabled(false)
     }
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when(item.itemId){

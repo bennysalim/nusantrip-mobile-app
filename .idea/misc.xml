@@ -5,6 +5,8 @@
       <map>
         <entry key="..\:/3.PRACTICE/1.ANDROID/Nusantrip/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
         <entry key="..\:/3.PRACTICE/1.ANDROID/Nusantrip/app/src/main/res/drawable/border.xml" value="0.1" />
+        <entry key="..\:/3.PRACTICE/1.ANDROID/Nusantrip/app/src/main/res/drawable/circlebg.xml" value="0.1435" />
+        <entry key="..\:/3.PRACTICE/1.ANDROID/Nusantrip/app/src/main/res/drawable/ic_baseline_calendar_month_24.xml" value="0.1435" />
         <entry key="..\:/3.PRACTICE/1.ANDROID/Nusantrip/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
         <entry key="..\:/3.PRACTICE/1.ANDROID/Nusantrip/app/src/main/res/layout/activity_activitty4_sign_in.xml" value="0.1" />
         <entry key="..\:/3.PRACTICE/1.ANDROID/Nusantrip/app/src/main/res/layout/activity_activity2_onboarding.xml" value="0.16" />
@@ -15,7 +17,7 @@
         <entry key="..\:/3.PRACTICE/1.ANDROID/Nusantrip/app/src/main/res/layout/activity_activity6_bottom_navigation.xml" value="0.20270270270270271" />
         <entry key="..\:/3.PRACTICE/1.ANDROID/Nusantrip/app/src/main/res/layout/activity_main.xml" value="0.17933130699088146" />
         <entry key="..\:/3.PRACTICE/1.ANDROID/Nusantrip/app/src/main/res/layout/fragment_dashboard.xml" value="0.19358108108108107" />
-        <entry key="..\:/3.PRACTICE/1.ANDROID/Nusantrip/app/src/main/res/layout/fragment_fragment1__home.xml" value="0.15101351351351353" />
+        <entry key="..\:/3.PRACTICE/1.ANDROID/Nusantrip/app/src/main/res/layout/fragment_fragment1__home.xml" value="0.25" />
         <entry key="..\:/3.PRACTICE/1.ANDROID/Nusantrip/app/src/main/res/layout/fragment_fragment2__my_activity.xml" value="0.15101351351351353" />
         <entry key="..\:/3.PRACTICE/1.ANDROID/Nusantrip/app/src/main/res/layout/fragment_fragment3__saved_post.xml" value="0.15101351351351353" />
         <entry key="..\:/3.PRACTICE/1.ANDROID/Nusantrip/app/src/main/res/layout/fragment_fragment4__notification.xml" value="0.15101351351351353" />
